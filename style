@@ -1,0 +1,18 @@
+#field{
+	display:block;
+	width: 600px;
+	height: 400px;
+	border: 1px solid black;
+	position: relative;
+}
+#ball{
+	position: absolute;
+	background-image: url(ball.png);
+}
+#board{
+	position: absolute;
+	bottom: 0px;
+	width: 100px;
+	height: 40px;
+	color: black;
+}
