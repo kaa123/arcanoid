@@ -11,11 +11,11 @@
 </head>
 <body>
 <div id="game">
-	<div id="field" @mousemove='onMouse' v-bind:style="width:fieldWidth.toString()+'px'">
-		<div id="ball">
+	<div id="field" @click='onClick' @mousemove='onMouse' v-bind:style="{width:fieldWidth.toString()+'px', height: fieldHeight.toString()+'px'}" >
+		<div id="ball" v-bind:style="{left: ballx.toString()+'px', top:bally.toString()+'px', width:ballWidth.toString()+'px',height:ballHeight.toString()+'px'}" >
 			
 		</div>
-		<div id="board" v-bind:style="{width:boardWidth.toString()+'px', left:boardPosition.toString() + 'px'}">
+		<div id="board" v-bind:style="{width:boardWidth.toString()+'px', left:boardPosition.toString() + 'px', height: boardHeight.toString()+'px'}">
 			
 		</div>
 	</div>
